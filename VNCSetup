@@ -1,0 +1,40 @@
+sudo apt update
+
+sudo apt upgrade
+
+sudo useradd -m -s /bin/bash enteryournamehere
+
+sudo passwd enteryournamehere
+
+sudo usermod -a -G sudo enteryournamehere
+
+su - enteryournamehere
+
+sudo su
+
+su - enteryournamehere
+
+sudo apt install xfce4 xfce4-goodies
+
+sudo apt install -y tightvncserver
+
+vncserver
+
+vncserver -kill :1
+
+nano ~/.vnc/xstartup
+
+Enter this text inside nano xstartup
+
+    
+#!/bin/bash
+xrdb $HOME/.Xresources
+startxfce4 &
+
+
+And save by pressing control key + x
+
+	
+chmod +x ~/.vnc/xstartup
+
+sudo reboot
